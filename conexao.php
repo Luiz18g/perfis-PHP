@@ -1,6 +1,6 @@
 <?php
 $servidor = "127.0.0.1";
-$banco = "db_perfil";
+$banco = "bd_perfill";
 $usuario = "root";
 $senha = "";
 
