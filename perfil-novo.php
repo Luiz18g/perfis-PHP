@@ -8,39 +8,42 @@
     <title>Document</title>
 </head>
 <body>
+<form action="upload.php" method="post" enctype="multipart/form-data">
     <div style="font-size: x-large">Nome:</div>
     <input type="text" name="nome_do_perfil">
 
     <div style="font-size: x-large">E-mail:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="E-mail">
 
     <div style="font-size: x-large">Profissão:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Profissão">
 
     <div style="font-size: x-large">Descrição:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Descrição">
 
     <div style="font-size: x-large">Instagram:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Instagram">
 
     <div style="font-size: x-large">Twitter:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Twitter">
 
     <div style="font-size: x-large">Facebook:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Facebook">
 
     <div style="font-size: x-large">Linkedin:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Linkedin">
 
     <div style="font-size: x-large">Youtube:</div>
-    <input type="text" name="nome_do_perfil">
+    <input type="text" name="Youtube">
+    <br>
 
+    <label>Foto:</label>
+        <input type="file" name="arquivo">
+        <br>
+        
     <div style="font-size: x-large">Senha:</div>
-    <input type="text" name="nome_do_perfil">
-
-    <button style="background: rgb(0,92,147); 
-    background: linear-gradient(90deg, rgba(0,92,147,1) 0%, rgba(7,24,205,1) 35%, rgba(255,0,134,1) 100%);"
-    onclick="alert('Salvo')">Salvar</button>
+    <input type="text" name="Senha">
+    <button type="submit">Enviar</button>
 
 </body>
 </html>

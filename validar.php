@@ -1,10 +1,10 @@
 <?php
-$nome = $_POST['nome'];
+$usuario = $_POST['usuario'];
 $senha = $_POST['senha'];
 
 include_once "conexao.php";
 
-$sql = "SELECT * FROM tb_validar WHERE email = '$nome' and senha = '$senha'";
+$sql = "SELECT * FROM tb_login WHERE usuario = '$usuario' and senha = '$senha'";
 
 $dados = mysqli_query($conexao, $sql);
 
@@ -12,7 +12,7 @@ if($dados->num_rows > 0) {
     session_start();
     $_SESSION["usuario"] = $usuario;
     header("location:perfil-painel.php");
-}else{
-    header("location:login.php?msg=Invalido");
-    }
+    }else{
+        header("location:login.php?msg=Invalido");
+}
 ?>
